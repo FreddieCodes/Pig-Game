@@ -2,6 +2,9 @@ describe("Game", function() {
     beforeEach(function(){
       game = new Game()
     });
+        it("gamePlaying starts as true", function(){
+            expect(game.gamePlaying).toBeTruthy();
+        });
        
         it("should have 2 players, whose scores start at 0", function(){
             expect(game.scores).toEqual([0,0]);
